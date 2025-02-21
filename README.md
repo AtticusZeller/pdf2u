@@ -1,22 +1,22 @@
 <!-- # Yet Another Document Translator -->
 
 <div align="center">
-<img src="https://s.immersivetranslate.com/assets/r2-uploads/images/babeldoc-banner.png" width="320px"  alt="YADT"/>
+<img src="https://s.immersivetranslate.com/assets/r2-uploads/images/pdf2u-banner.png" width="320px"  alt="YADT"/>
 
 
-<h2 id="title">BabelDOC</h2>
+<h2 id="title">pdf2u</h2>
 
 <p>
   <!-- PyPI -->
-  <a href="https://pypi.org/project/BabelDOC/">
-    <img src="https://img.shields.io/pypi/v/BabelDOC"></a>
-  <a href="https://pepy.tech/projects/BabelDOC">
-    <img src="https://static.pepy.tech/badge/BabelDOC"></a>
-  <!-- <a href="https://github.com/funstory-ai/BabelDOC/pulls">
+  <a href="https://pypi.org/project/pdf2u/">
+    <img src="https://img.shields.io/pypi/v/pdf2u"></a>
+  <a href="https://pepy.tech/projects/pdf2u">
+    <img src="https://static.pepy.tech/badge/pdf2u"></a>
+  <!-- <a href="https://github.com/atticuszeller/pdf2u/pulls">
     <img src="https://img.shields.io/badge/contributions-welcome-green"></a> -->
   <!-- License -->
   <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/funstory-ai/BabelDOC"></a>
+    <img src="https://img.shields.io/github/license/atticuszeller/pdf2u"></a>
   <a href="https://t.me/+Z9_SgnxmsmA5NzBl">
     <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=flat-squeare&logo=telegram&logoColor=white"></a>
 </p>
@@ -31,7 +31,7 @@ PDF scientific paper translation and bilingual comparison library.
 ## Preview
 
 <div align="center">
-<img src="https://s.immersivetranslate.com/assets/r2-uploads/images/babeldoc-preview.png" width="80%"/>
+<img src="https://s.immersivetranslate.com/assets/r2-uploads/images/pdf2u-preview.png" width="80%"/>
 </div>
 
 ## Getting Started
@@ -45,18 +45,18 @@ We recommend using the Tool feature of [uv](https://github.com/astral-sh/uv) to 
 2. Use the following command to install yadt:
 
 ```bash
-uv tool install --python 3.12 BabelDOC
+uv tool install --python 3.12 pdf2u
 
-babeldoc --help
+pdf2u --help
 ```
 
-3. Use the `babeldoc` command. For example:
+3. Use the `pdf2u` command. For example:
 
 ```bash
-babeldoc --bing  --files example.pdf
+pdf2u --bing  --files example.pdf
 
 # multiple files
-babeldoc --bing  --files example1.pdf --files example2.pdf
+pdf2u --bing  --files example1.pdf --files example2.pdf
 ```
 
 ### Install from Source
@@ -69,22 +69,22 @@ We still recommend using [uv](https://github.com/astral-sh/uv) to manage virtual
 
 ```bash
 # clone the project
-git clone https://github.com/funstory-ai/BabelDOC
+git clone https://github.com/atticuszeller/pdf2u
 
 # enter the project directory
-cd BabelDOC
+cd pdf2u
 
-# install dependencies and run babeldoc
-uv run babeldoc --help
+# install dependencies and run pdf2u
+uv run pdf2u --help
 ```
 
-3. Use the `uv run babeldoc` command. For example:
+3. Use the `uv run pdf2u` command. For example:
 
 ```bash
-uv run babeldoc --bing --files example.pdf
+uv run pdf2u --bing --files example.pdf
 
 # multiple files
-uv run babeldoc --bing --files example.pdf --files example2.pdf
+uv run pdf2u --bing --files example.pdf --files example2.pdf
 ```
 
 > [!TIP]
@@ -158,7 +158,7 @@ uv run babeldoc --bing --files example.pdf --files example2.pdf
 Example Configuration:
 
 ```toml
-[babeldoc]
+[pdf2u]
 debug = true
 lang-in = "en-US"
 lang-out = "zh-CN"
@@ -174,11 +174,11 @@ openai-api-key = "[KEY]"
 
 ## Python API
 
-You can refer to the example in [main.py](https://github.com/funstory-ai/yadt/blob/main/babeldoc/main.py) to use BabelDOC's Python API.
+You can refer to the example in [main.py](https://github.com/atticuszeller/yadt/blob/main/pdf2u/main.py) to use pdf2u's Python API.
 
 Please note:
 
-1. Make sure call `babeldoc.high_level.init()` before using the API
+1. Make sure call `pdf2u.high_level.init()` before using the API
 
 2. The current `TranslationConfig` does not fully validate input parameters, so you need to ensure the validity of input parameters
 
@@ -189,7 +189,7 @@ There are a lot projects and teams working on to make document editing and trans
 - [mathpix](https://mathpix.com/)
 - [Doc2X](https://doc2x.noedgeai.com/)
 - [minerU](https://github.com/opendatalab/MinerU)
-- [PDFMathTranslate](https://github.com/funstory-ai/yadt)
+- [PDFMathTranslate](https://github.com/atticuszeller/yadt)
 
 There are also some solutions to solve specific parts of the problem like:
 
@@ -239,11 +239,11 @@ And meet the following requirements:
 
 ## How to Contribute
 
-We encourage you to contribute to YADT! Please check out the [CONTRIBUTING](https://github.com/funstory-ai/yadt/blob/main/docs/CONTRIBUTING.md) guide.
+We encourage you to contribute to YADT! Please check out the [CONTRIBUTING](https://github.com/atticuszeller/yadt/blob/main/docs/CONTRIBUTING.md) guide.
 
-Everyone interacting in YADT and its sub-projects' codebases, issue trackers, chat rooms, and mailing lists is expected to follow the YADT [Code of Conduct](https://github.com/funstory-ai/yadt/blob/main/docs/CODE_OF_CONDUCT.md).
+Everyone interacting in YADT and its sub-projects' codebases, issue trackers, chat rooms, and mailing lists is expected to follow the YADT [Code of Conduct](https://github.com/atticuszeller/yadt/blob/main/docs/CODE_OF_CONDUCT.md).
 
-[Immersive Translation](https://immersivetranslate.com) sponsors monthly Pro membership redemption codes for active contributors to this project, see details at: [CONTRIBUTOR_REWARD.md](https://github.com/funstory-ai/BabelDOC/blob/main/docs/CONTRIBUTOR_REWARD.md)
+[Immersive Translation](https://immersivetranslate.com) sponsors monthly Pro membership redemption codes for active contributors to this project, see details at: [CONTRIBUTOR_REWARD.md](https://github.com/atticuszeller/pdf2u/blob/main/docs/CONTRIBUTOR_REWARD.md)
 
 ## Acknowledgements
 
@@ -255,10 +255,10 @@ Everyone interacting in YADT and its sub-projects' codebases, issue trackers, ch
 
 <h2 id="star_hist">Star History</h2>
 
-<a href="https://star-history.com/#funstory-ai/babeldoc&Date">
+<a href="https://star-history.com/#atticuszeller/pdf2u&Date">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=funstory-ai/babeldoc&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=funstory-ai/babeldoc&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=funstory-ai/babeldoc&type=Date"/>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=atticuszeller/pdf2u&type=Date&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=atticuszeller/pdf2u&type=Date" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=atticuszeller/pdf2u&type=Date"/>
  </picture>
 </a>

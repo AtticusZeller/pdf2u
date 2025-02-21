@@ -10,18 +10,18 @@
 
 ### **Did you find a bug?**
 
-- **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/funstory-ai/yadt/issues).
+- **Ensure the bug was not already reported** by searching on GitHub under [Issues](https://github.com/atticuszeller/yadt/issues).
 
 Please pay special attention to:
 
-1. Known compatibility issues with pdf2zh - see [#20](https://github.com/funstory-ai/yadt/issues/20) for details
-2. Reported edge cases and limitations from downstream applications - see [#23](https://github.com/funstory-ai/yadt/issues/23) for discussion
+1. Known compatibility issues with pdf2zh - see [#20](https://github.com/atticuszeller/yadt/issues/20) for details
+2. Reported edge cases and limitations from downstream applications - see [#23](https://github.com/atticuszeller/yadt/issues/23) for discussion
 
-- If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/funstory-ai/yadt/issues/new?template=bug_report.md). Be sure to include a **title and clear description**, as much relevant information as possible.
+- If you're unable to find an open issue addressing the problem, [open a new one](https://github.com/atticuszeller/yadt/issues/new?template=bug_report.md). Be sure to include a **title and clear description**, as much relevant information as possible.
 
 ### **If you wish to request changes or new features**
 
-- Suggest your change in the [Issues](https://github.com/funstory-ai/yadt/issues/new?template=feature_request.md) section.
+- Suggest your change in the [Issues](https://github.com/atticuszeller/yadt/issues/new?template=feature_request.md) section.
 
 ### **If you wish to add more translators**
 
@@ -32,9 +32,9 @@ Please pay special attention to:
 
 > [!TIP]
 >
-> If you have any questions about the source code or related matters, please contact the maintainer at aw@funstory.ai .
+> If you have any questions about the source code or related matters, please contact the maintainer at aw@atticuszeller .
 > 
-> You can also raise questions in [Issues](https://github.com/funstory-ai/yadt/issues).
+> You can also raise questions in [Issues](https://github.com/atticuszeller/yadt/issues).
 > 
 > You can contact the maintainers in the pdf2zh discussion group.
 > 
@@ -159,23 +159,23 @@ The existing codebase does not comply with the above specifications in some aspe
 
 #### How to modify the intermediate representation
 
-The intermediate representation is described by [il_version_1.rnc](https://github.com/funstory-ai/yadt/blob/main/yadt/document_il/il_version_1.rnc). Corresponding Python data classes are generated using [xsdata](https://xsdata.readthedocs.io/en/latest/). The files `il_version_1.rng`, `il_version_1.xsd`, and `il_version_1.py` are auto-generated and must not be manually modified.
+The intermediate representation is described by [il_version_1.rnc](https://github.com/atticuszeller/yadt/blob/main/yadt/document_il/il_version_1.rnc). Corresponding Python data classes are generated using [xsdata](https://xsdata.readthedocs.io/en/latest/). The files `il_version_1.rng`, `il_version_1.xsd`, and `il_version_1.py` are auto-generated and must not be manually modified.
 
 ##### Format RNC file
 
 ```bash
-trang babeldoc/document_il/il_version_1.rnc babeldoc/document_il/il_version_1.rnc
+trang pdf2u/document_il/il_version_1.rnc pdf2u/document_il/il_version_1.rnc
 ```
 
 ##### Generate RNG, XSD and Python classes
 
 ```bash
 # Generate RNG from RNC
-trang babeldoc/document_il/il_version_1.rnc babeldoc/document_il/il_version_1.rng
+trang pdf2u/document_il/il_version_1.rnc pdf2u/document_il/il_version_1.rng
 
 # Generate XSD from RNC
-trang babeldoc/document_il/il_version_1.rnc babeldoc/document_il/il_version_1.xsd
+trang pdf2u/document_il/il_version_1.rnc pdf2u/document_il/il_version_1.xsd
 
 # Generate Python classes from XSD
-xsdata generate babeldoc/document_il/il_version_1.xsd --package babeldoc.document_il
+xsdata generate pdf2u/document_il/il_version_1.xsd --package pdf2u.document_il
 ```

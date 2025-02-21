@@ -16,7 +16,7 @@ jobs:
     name: Check if running in main repository
     runs-on: ubuntu-latest
     outputs:
-      is_main_repo: ${{ github.repository == 'funstory-ai/BabelDOC' }}
+      is_main_repo: ${{ github.repository == 'atticuszeller/pdf2u' }}
     steps:
       - run: echo "Running repository check"
 
@@ -82,7 +82,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: pypi
-      url: https://pypi.org/p/BabelDOC
+      url: https://pypi.org/p/pdf2u
 
     permissions:
       id-token: write
@@ -106,7 +106,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/BabelDOC
+      url: https://test.pypi.org/p/pdf2u
 
     permissions:
       id-token: write

@@ -1,4 +1,4 @@
-# BabelDOC/PDFMathTranslate 贡献者奖励规则
+# pdf2u/PDFMathTranslate 贡献者奖励规则
 
 ## 月度活跃贡献者奖励规则
 
@@ -16,15 +16,15 @@
 
 ### 二、申请流程
 #### **申请条件**
-   - PR 需被成功合并至[funstory-ai/BabelDOC](https://github.com/funstory-ai/BabelDOC/pulls) 仓库或 [Byaidu/PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate/pulls)的主分支。
+   - PR 需被成功合并至[atticuszeller/pdf2u](https://github.com/atticuszeller/pdf2u/pulls) 仓库或 [Byaidu/PDFMathTranslate](https://github.com/Byaidu/PDFMathTranslate/pulls)的主分支。
    - 审核 PR、撰写 wiki 等贡献也必须是以上两个仓库。
    - 同一贡献者每月仅可申请一次（无论提交 PR 数量）
    - 同一贡献者每月最多可以获得 1 个兑换码
    - 对于 PR，只有发起者可以申请兑换码
-   - 仅可使用当月的贡献申请兑换码（特殊情况请联系 aw@funstory.ai 说明）
+   - 仅可使用当月的贡献申请兑换码（特殊情况请联系 aw@atticuszeller 说明）
 
 #### **申请方式**
-   - 发送邮件至 **aw@funstory.ai**
+   - 发送邮件至 **aw@atticuszeller**
    - 邮件标题格式：`[贡献者会员兑换码申请] GitHub用户名-月份`（例：`[贡献者会员兑换码申请] awwaawwa-2024-07`）
    - 邮件正文需包含：
      - GitHub 用户名
@@ -32,7 +32,7 @@
    - 附件要求：
      - PR 页面完整截图（需包含合并状态、仓库名称及点击头像后弹出来的侧边栏，如下图所示）
 
-![附件示例](https://s.immersivetranslate.com/assets/r2-uploads/images/babeldoc-contributor_reward_example.png)
+![附件示例](https://s.immersivetranslate.com/assets/r2-uploads/images/pdf2u-contributor_reward_example.png)
 
 #### **奖励说明**
    - 奖励内容：[沉浸式翻译（Immersive Translate）](https://immersivetranslate.com/zh-Hans/pricing/)月度会员兑换码
@@ -59,8 +59,8 @@
    - 提供虚假或误导性的申请材料
 
 #### **特别说明**
-   - funstory.ai 保留对贡献价值的评估权、规则的最终解释权等所有必要权利
-   - 规则如有实质性更新（格式调整等除外），将提前 1 天在 [BabelDOC GitHub PR](https://github.com/funstory-ai/BabelDOC/pulls) 公告
+   - atticuszeller 保留对贡献价值的评估权、规则的最终解释权等所有必要权利
+   - 规则如有实质性更新（格式调整等除外），将提前 1 天在 [pdf2u GitHub PR](https://github.com/atticuszeller/pdf2u/pulls) 公告
    - 过期未使用的兑换码不予补发
    - 自 2025 年 2 月 1 日起的贡献可以申请兑换码
    - 为了确认您是 Pull Request (PR) 的发起者，防止他人冒领，我们可能会要求您使用发起者账号在 PR 下方留言指定的随机数字。
@@ -80,4 +80,4 @@ A：系统性的人工翻译（如完整章节的翻译并经过人工校对）�
 A：因为目前应该是中文贡献者多吧，所以就先写中文的。后面再撰写英文版的。
 
 ---
-**规则公示**：本规则文档存放于 BabelDOC 仓库 [CONTRIBUTOR_REWARD.md](https://github.com/funstory-ai/BabelDOC/blob/main/docs/CONTRIBUTOR_REWARD.md)，并在 [Contributor Reward - BabelDOC](https://funstory-ai.github.io/BabelDOC/CONTRIBUTOR_REWARD/) 展示。
+**规则公示**：本规则文档存放于 pdf2u 仓库 [CONTRIBUTOR_REWARD.md](https://github.com/atticuszeller/pdf2u/blob/main/docs/CONTRIBUTOR_REWARD.md)，并在 [Contributor Reward - pdf2u](https://atticuszeller.github.io/pdf2u/CONTRIBUTOR_REWARD/) 展示。

@@ -36,5 +36,5 @@ jobs:
 
       - name: Run tests
         run: |
-          uv run babeldoc --help
-          uv run babeldoc --bing --files examples/ci/test.pdf
+          uv run pdf2u --help
+          uv run pdf2u --bing --files examples/ci/test.pdf
