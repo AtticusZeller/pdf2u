@@ -1209,6 +1209,7 @@ wheels = [
 
 [[package]]
 name = "pdf2u"
+version = "0.0.4"
 source = { editable = "." }
 dependencies = [
     { name = "bitstring" },
