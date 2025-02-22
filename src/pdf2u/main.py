@@ -1,6 +1,5 @@
 import asyncio
 import logging
-from enum import Enum
 from pathlib import Path
 from typing import Any
 
@@ -17,7 +16,7 @@ from rich.progress import (
 )
 
 import pdf2u.high_level
-from pdf2u.const import get_cache_file_path
+from pdf2u.const import TranslationService, get_cache_file_path
 from pdf2u.document_il.translator.translator import (
     BaseTranslator,
     BingTranslator,
@@ -43,12 +42,6 @@ for logger_name in NOISY_LOGGERS:
     log = logging.getLogger(logger_name)
     log.setLevel("CRITICAL")
     log.propagate = False
-
-
-class TranslationService(str, Enum):
-    OPENAI = "openai"
-    GOOGLE = "google"
-    BING = "bing"
 
 
 def create_progress_handler(translation_config: TranslationConfig):  # type: ignore

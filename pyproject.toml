@@ -60,7 +60,7 @@ pdf2u = "pdf2u.main:app"
 # FROM: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
 
 [project.optional-dependencies]
-gui = ["streamlit>=1.42.2", "streamlit-pdf-viewer>=0.0.21"]
+gui = ["pypdf2>=3.0.1", "streamlit>=1.42.2", "streamlit-pdf-viewer>=0.0.21"]
 # optional deps for package installation
 
 [dependency-groups]
