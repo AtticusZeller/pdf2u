@@ -2,7 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-## 0.0.1 - 2025-02-22
+## 0.0.2 - 2025-02-22
 
 ### 🚀 Features
 
@@ -106,6 +106,7 @@ All notable changes to this project will be documented in this file.
 - Python lint
 - Temporarily disable CoreML execution provider
 - Adjust max_batch_size for CoreML execution provider
+- Remove docs build
 
 ### 🚜 Refactor
 
