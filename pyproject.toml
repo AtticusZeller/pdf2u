@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling"]
+requires      = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.version]
@@ -21,10 +21,10 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
-    "Programming Language :: Python :: 3.13"
+    "Programming Language :: Python :: 3.13",
 ] # FROM: https://pypi.org/classifiers/
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.13"
 license = { file = "LICENSE" }
 authors = [{ name = "A.J.Zeller", email = "hello@atticux.me" }]
 maintainers = [{ name = "A.J.Zeller", email = "hello@atticux.me" }]
@@ -59,12 +59,8 @@ Issues   = "https://github.com/atticuszeller/pdf2u/issues"
 pdf2u = "pdf2u.main:app"
 # FROM: https://packaging.python.org/en/latest/guides/writing-pyproject-toml/
 
-
 [project.optional-dependencies]
-gui = [
-    "streamlit>=1.42.2",
-    "streamlit-pdf-viewer>=0.0.21",
-]
+gui = ["streamlit>=1.42.2", "streamlit-pdf-viewer>=0.0.21"]
 # optional deps for package installation
 
 [dependency-groups]
@@ -81,7 +77,6 @@ dev = [
     "fonttools>=4.56.0",
 ]
 
-
 ## Test
 [tool.mypy]
 strict  = true
@@ -91,8 +86,8 @@ exclude = ["venv", ".venv"]
 # Set additional command line options for pytest
 # Ref: https://docs.pytest.org/en/stable/reference/reference.html#command-line-flags
 addopts        = "-rXs --strict-config --strict-markers --tb=long"
-xfail_strict   = true                                               # Treat tests that are marked as xfail but pass as test failures
-filterwarnings = ["error"]                                          # Treat all warnings as errors
+xfail_strict   = true                                              # Treat tests that are marked as xfail but pass as test failures
+filterwarnings = ["error"]                                         # Treat all warnings as errors
 pythonpath     = "src/pdf2u/"
 
 [tool.coverage.run]
