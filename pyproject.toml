@@ -12,6 +12,7 @@ packages = ["src/pdf2u"]
 
 [project]
 name = "pdf2u"
+version = "0.0.4"
 description = "Yet Another Document Translator"
 classifiers = [
     "License :: OSI Approved :: MIT License",
@@ -28,7 +29,7 @@ requires-python = ">=3.10,<3.13"
 license = { file = "LICENSE" }
 authors = [{ name = "A.J.Zeller", email = "hello@atticux.me" }]
 maintainers = [{ name = "A.J.Zeller", email = "hello@atticux.me" }]
-dynamic = ["version"] # https://hatch.pypa.io/latest/config/metadata/#version
+# dynamic = ["version"] # https://hatch.pypa.io/latest/config/metadata/#version
 dependencies = [
     "bitstring>=4.3.0",
     "configargparse>=1.7",
@@ -225,7 +226,7 @@ topo_order = false
 sort_commits = "oldest"
 
 [tool.bumpversion]
-current_version        = "0.0.3"
+current_version        = "0.0.4"
 parse                  = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
 serialize              = ["{major}.{minor}.{patch}"]
 search                 = "{current_version}"
@@ -247,6 +248,11 @@ post_commit_hooks      = []
 
 [[tool.bumpversion.files]]
 filename = "src/pdf2u/__init__.py"
+
+[[tool.bumpversion.files]]
+filename = "pyproject.toml"
+search   = "version = \"{current_version}\""
+replace  = "version = \"{new_version}\""
 
 [[tool.bumpversion.files]]
 filename = "CHANGELOG.md"
