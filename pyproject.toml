@@ -25,7 +25,7 @@ classifiers = [
     "Programming Language :: Python :: 3.13",
 ] # FROM: https://pypi.org/classifiers/
 readme = "README.md"
-requires-python = ">=3.10,<3.13"
+requires-python = ">=3.11,<3.13"
 license = { file = "LICENSE" }
 authors = [{ name = "A.J.Zeller", email = "hello@atticux.me" }]
 maintainers = [{ name = "A.J.Zeller", email = "hello@atticux.me" }]
