@@ -34,10 +34,10 @@ start streamlit server
 pdf2u gui -a 127.0.0.1
 ```
 
-upload pdf file to translate.
+upload pdf file to translate
 
 ![upload](docs/upload.png)
 
-translate pdf file.
+translate pdf file
 
 ![translate](docs/translate.png)
