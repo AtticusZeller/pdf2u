@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.6 - 2025-03-06
+
+### 🐛 Bug Fixes
+
+- StrNum support
+
 ## 0.0.5 - 2025-03-06
 
 ### 🚀 Features
