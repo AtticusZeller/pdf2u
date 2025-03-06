@@ -1,5 +1,7 @@
 import asyncio
 import logging
+import subprocess
+import sys
 from pathlib import Path
 from typing import Any
 
@@ -296,6 +298,47 @@ def translate(
 
         # Run async process_file in event loop
         asyncio.run(process_file(config, debug))
+
+
+@app.command()
+def gui(
+    port: int = typer.Option(
+        7860, "--port", "-p", help="Port to run the Streamlit server on"
+    ),
+    address: str = typer.Option(
+        "0.0.0.0", "--address", "-a", help="Address to run the Streamlit server on"
+    ),
+    browser: bool = typer.Option(
+        True, "--browser/--no-browser", help="Open a browser window automatically"
+    ),
+):
+    """Launch the Streamlit GUI interface."""
+    # Construct the command to run Streamlit
+    gui_src = Path(__file__).parent / "gui.py"
+    cmd = [
+        "streamlit",
+        "run",
+        gui_src.absolute().as_posix(),
+        "--server.port",
+        str(port),
+        "--server.address",
+        address,
+    ]
+
+    if not browser:
+        cmd.extend(["--server.headless", "true"])
+
+    logger.info(f"Starting Streamlit GUI on http://{address}:{port}")
+
+    try:
+        # Execute the Streamlit command
+        result = subprocess.run(cmd)
+        sys.exit(result.returncode)
+    except KeyboardInterrupt:
+        logger.info("Streamlit GUI stopped by user")
+    except Exception as e:
+        logger.error(f"Failed to start Streamlit GUI: {e}")
+        raise typer.Exit(1)
 
 
 if __name__ == "__main__":
