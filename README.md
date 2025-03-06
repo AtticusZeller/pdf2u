@@ -25,3 +25,19 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 ```bash
 uv tool install pdf2u
 ```
+
+## Usage
+
+start streamlit server
+
+```bash
+pdf2u gui -a 127.0.0.1
+```
+
+upload pdf file to translate.
+
+![upload](docs/upload.png)
+
+translate pdf file.
+
+![translate](docs/translate.png)
