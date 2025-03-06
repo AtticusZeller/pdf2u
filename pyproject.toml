@@ -12,7 +12,7 @@ packages = ["src/pdf2u"]
 
 [project]
 name = "pdf2u"
-version = "0.0.4"
+version = "0.0.5"
 description = "Yet Another Document Translator"
 classifiers = [
     "License :: OSI Approved :: MIT License",
@@ -226,7 +226,7 @@ topo_order = false
 sort_commits = "oldest"
 
 [tool.bumpversion]
-current_version        = "0.0.4"
+current_version        = "0.0.5"
 parse                  = "(?P<major>\\d+)\\.(?P<minor>\\d+)\\.(?P<patch>\\d+)"
 serialize              = ["{major}.{minor}.{patch}"]
 search                 = "{current_version}"

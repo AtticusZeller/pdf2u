@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+## 0.0.5 - 2025-03-06
+
+### 🚀 Features
+
+- Add dockerfile run streamlit app
+- Add gui command to start app
+
+### 🐛 Bug Fixes
+
+- Cache path
+
+### 📚 Documentation
+
+- Add instructions for streamlit GUI
+
 ## 0.0.4 - 2025-02-22
 
 ### 🚀 Features
